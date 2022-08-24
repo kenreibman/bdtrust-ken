@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://use.typekit.net/aqn7pfv.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js" integrity="sha256-xLD7nhI62fcsEZK2/v8LsBcb4lG7dgULkuXoXB/j91c=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type='text/javascript' src='knockout-3.5.1.js'></script>
+
+    <title>Home - Benefits Data Trust</title>
+</head>
+<body>
+
+    <header class="main-header relative">
+        <div class="main-header__top">
+            <div class="main-header__top__inner row pad">
+                <ul class="main-header__top__navigation">
+                    <li class="main-header__top__item">
+                        <a href="#" class="main-header__top__link">Contact us</a>
+                    </li>
+                    <li class="main-header__top__item">
+                        <a href="#" class="main-header__top__link main-header__top__link--green">Join the team</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="main-header__primary__inner row pad">
+            <nav class="main-header__primary__navigation">
+                <div class="main-header__primary__logo">
+                    <a href="#">
+                        <img src="images/logo/bdt-logo-2-color.svg" alt="Benefits Data Trust">
+                    </a>
+                </div>
+                <ul class="c-navigation__level-1">
+                    <li class="c-navigation__item c-navigation__item--level-1">
+                        <a href="#" class="c-navigation__url c-navigation__url--level-1">
+                            Who We Are
+                        </a>
+                    </li>
+                    <li class="c-navigation__item c-navigation__item--level-1">
+                        <a href="#" class="c-navigation__url c-navigation__url--level-1">
+                            What We Do
+                        </a>
+                    </li>
+                    <li class="c-navigation__item c-navigation__item--level-1">
+                        <a href="#" class="c-navigation__url c-navigation__url--level-1">
+                            Get Help
+                        </a>
+                    </li>
+                    <li class="c-navigation__item c-navigation__item--level-1">
+                        <a href="#" class="c-navigation__url c-navigation__url--level-1">
+                            News & Insights
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main-content-placeholder" id="main-content">
+        <!-- Hero -->
+        <section class="s-hero" aria-labelledby="h2_hero">
+            <h2 class="accessible-hide" id="h2_hero">Hero</h2>
+            <div class="s-hero__inner row pad">
+                <div class="s-hero__container">
+                    <div class="s-hero__title">Helping people today, modernizing benefits access for tomorrow</div>
+                    <div class="s-hero__subtitle">Each year, $60 billion in food, healthcare, and other assistance goes untapped—we are committed to closing that gap to reduce hunger and poverty and build pathways to economic mobility.</div>
+                    <a href="#" class="s-hero__more">Learn more</a>
+                </div>
+            </div>
+            <div class="s-hero__image">
+                <img src="images/hero-header-fam-square.jpeg" alt="Image of a happy family">
+            </div>
+        </section>
+
+        <!-- Featured -->
+        <section class="s-featured" aria-labelledby="h2_featured">
+            <h2 class="accessible-hide" id="h2_featured">Featured</h2>
+            <div class="s-featured__inner row pad">
+                <ul class="s-featured__items">
+                    <li class="s-featured__item">
+                        <div class="s-featured__item--top">
+                            <img src="images/icons/iconography/assess.svg" alt="" aria-hidden="true" class="s-featured__item-image">
+                            <div class="s-featured__item-text-container">
+                                <div class="s-featured__item-title">Enrollment Services</div>
+                                <div class="s-featured__item-description">Every person should easily receive assistance they are eligible for when they need it. To achieve that, we provide data-driven outreach, online tools and assistance in applying over the phone to efficiently connect people to available assistance.</div>
+                            </div>
+                        </div>
+                        <div class="s-featured__item--bottom">
+                            <a href="#" class="s-featured__item-more">Learn more <span class="arrow-right bdt-icon"></span></a>
+                        </div>
+                    </li>
+                    <li class="s-featured__item">
+                        <div class="s-featured__item--top">
+                            <img src="images/icons/iconography/healthcare.svg" alt="" aria-hidden="true" class="s-featured__item-image">
+                            <div class="s-featured__item-text-container">
+                                <div class="s-featured__item-title">Healthcare Innovation</div>
+                                <div class="s-featured__item-description">Healthcare entities have a unique opportunity to connect people to benefits that improve health and reduce unnecessary healthcare costs. We work with health plans, integrated delivery networks, and other healthcare partners to help their members and patients access assistance programs with ease.</div>
+                            </div>
+                        </div>
+                        <div class="s-featured__item--bottom">
+                            <a href="#" class="s-featured__item-more">Learn more <span class="arrow-right bdt-icon"></span></a>
+                        </div>
+                    </li>
+                    <li class="s-featured__item">
+                        <div class="s-featured__item--top">
+                            <img src="images/icons/iconography/policy.svg" alt="" aria-hidden="true" class="s-featured__item-image">
+                            <div class="s-featured__item-text-container">
+                                <div class="s-featured__item-title">Public Policy & Practice Change</div>
+                                <div class="s-featured__item-description">Too often, assistance programs are burdensome for families to access and for government agencies to administer. We help government leaders test and adopt policy and practice solutions that bring more equity and efficiency to benefits access.</div>
+                            </div>
+                        </div>
+                        <div class="s-featured__item--bottom">
+                            <a href="#" class="s-featured__item-more">Learn more <span class="arrow-right bdt-icon"></span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- Filter // Services -->
+        <section class="s-services" aria-labelledby="h2_services">
+            <div class="accessible-hide" id="h2_services">Services</div>
+            <div class="s-services__inner row pad">
+                <div class="s-services__tabs-container">
+                    <div class="s-services__title">How we can help you.</div>
+                    <ul class="s-services__tabs">
+                        <li class="s-services__tabs-item">
+                            <a href="#government" class="s-services__tabs-link">Government</a>
+                        </li>
+                        <li class="s-services__tabs-item">
+                            <a href="#policy" class="s-services__tabs-link">Policy Makers</a>
+                        </li>
+                        <li class="s-services__tabs-item">
+                            <a href="#healthcare" class="s-services__tabs-link">Healthcare Plans & Providers</a>
+                        </li>
+                        <li class="s-services__tabs-item">
+                            <a href="#philanthropy" class="s-services__tabs-link">Philanthropy</a>
+                        </li>
+                        <li class="s-services__tabs-item">
+                            <a href="#academia" class="s-services__tabs-link">Academia</a>
+                        </li>
+                        <li class="s-services__tabs-item">
+                            <a href="#residents" class="s-services__tabs-link">Residents</a>
+                        </li>
+                        <li class="s-services__tabs-item">
+                            <a href="#media" class="s-services__tabs-link">Media</a>
+                        </li>
+                        <li class="s-services__tabs-item">
+                            <a href="#researchers" class="s-services__tabs-link">Researchers</a>
+                        </li>
+                        <li class="s-services__tabs-item">
+                            <a href="#prospective" class="s-services__tabs-link">Prospective Employees</a>
+                        </li>
+                    </ul>
+                    <div class="s-services__item" id="government">
+                        <div class="s-services__item-image">
+                            <img src="images/car-building.jpg" alt="Car parked in front of government building.">
+                        </div>
+                        <div class="s-services__item-content">
+                            <div class="s-services__item-title">Government</div>
+                            <div class="s-services__item-description">
+                                We work togther with federal, state and local government agencies to identify eligible individuals in need of services, and develop critical strategies and reforms to streamline the benefits access landscape.
+                            </div>
+                            <ul class="s-services__item-links">
+                                <li class="s-services__item-link">
+                                    <a href="#">Our state partners <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Policy-related resources <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Contact us <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="s-services__item" id="policy">
+                        <div class="s-services__item-image">
+                            <img src="https://picsum.photos/536/354" alt="Random image">
+                        </div>
+                        <div class="s-services__item-content">
+                            <div class="s-services__item-title">Policy Makers</div>
+                            <div class="s-services__item-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit repudiandae harum sunt aut voluptatum reiciendis fuga laborum veritatis dolore obcaecati!
+                            </div>
+                            <ul class="s-services__item-links">
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum dolor.<span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum. <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum dolor. <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="s-services__item" id="healthcare">
+                        <div class="s-services__item-image">
+                            <img src="https://picsum.photos/id/237/536/354" alt="Random image">
+                        </div>
+                        <div class="s-services__item-content">
+                            <div class="s-services__item-title">Healthcare Plans & Providers</div>
+                            <div class="s-services__item-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla autem hic, assumenda nostrum quod optio debitis eum aut deserunt praesentium.
+                            </div>
+                            <ul class="s-services__item-links">
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum dolor.<span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum. <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum dolor. <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="s-services__item" id="philanthropy">
+                        <div class="s-services__item-image">
+                            <img src="https://picsum.photos/seed/picsum/536/354" alt="Random image">
+                        </div>
+                        <div class="s-services__item-content">
+                            <div class="s-services__item-title">Philanthropy</div>
+                            <div class="s-services__item-description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quaerat minus alias, laudantium libero aliquid architecto culpa recusandae quia nam. Laboriosam, voluptate.
+                            </div>
+                            <ul class="s-services__item-links">
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum dolor.<span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum. <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum dolor. <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="s-services__item" id="academia">
+                        <div class="s-services__item-image">
+                            <img src="https://picsum.photos/200/300?grayscale" alt="Random image">
+                        </div>
+                        <div class="s-services__item-content">
+                            <div class="s-services__item-title">Academia</div>
+                            <div class="s-services__item-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla corporis error quis pariatur ex illo, animi deserunt odio.
+                            </div>
+                            <ul class="s-services__item-links">
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum dolor.<span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum. <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                                <li class="s-services__item-link">
+                                    <a href="#">Lorem, ipsum dolor. <span class="arrow-right bdt-icon"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="s-services__item" id="residents">
+                        <h1>Residents</h1>
+                    </div>
+                    <div class="s-services__item" id="media">
+                        <h1>Media</h1>
+                    </div>
+                    <div class="s-services__item" id="researchers">
+                        <h1>Researchers</h1>
+                    </div>
+                    <div class="s-services__item" id="prospective">
+                        <h1>Prospective Employees</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Our Historic Impact (Statistics) -->
+        <section class="s-stats" aria-labelledby="h2_stats">
+            <h2 class="accessible-hide" id="h2_stats">Statistics</h2>
+            <div class="s-stats__inner row pad">
+                <div class="c-stats__container">
+                    <div class="c-stats__title">Our Historic Impact</div>
+                    <ul class="c-stats__items">
+                        <li class="c-stats__item">
+                            <div class="c-stats__item-title">1.2M+</div>
+                            <div class="c-stats__item-description">households screened for benefits</div>
+                        </li>
+                        <li class="c-stats__item">
+                            <div class="c-stats__item-title">800,000</div>
+                            <div class="c-stats__item-description">benefit enrollments</div>
+                        </li>
+                        <li class="c-stats__item">
+                            <div class="c-stats__item-title">$9B+</div>
+                            <div class="c-stats__item-description">secured in assistance for families nationwide</div>
+                        </li>
+                    </ul>
+                    <a href="#" class="c-stats__more">Learn more about our strategies <span class="arrow-right bdt-icon"></span></a>
+                </div>
+            </div>
+        </section>
+        <!-- Our Partners -->
+        <section class="s-partners" aria-labelledby="h2_partners">
+            <h2 class="accessible-hide" id="h2_partners">Our Partners</h2>
+            <div class="s-partners__inner row pad">
+                <div class="c-partners__cta">
+                    <div class="c-partners__title">Our Partners</div>
+                    <div class="c-partners__description">Together with a national network of partners, we work to influence change and build solutions to provide more dignified, equitable, and efficient benefits access.</div>
+                    <a href="#" class="c-partners__more">Learn more</a>
+                </div>
+                <div class="c-partners__image">
+                    <img src="images/window-convo.jpg" alt="Two female identifying employees sit on the windowsill having a friendly conversation.">
+                </div>
+
+            </div>
+        </section>
+        <!-- Slideshow -->
+        <section class="s-slideshow" aria-labelledby="h2_slideshow">
+            <h2 class="accessible-hide" id="h2_slideshow">Slideshow</h2>
+            <div class="s-slideshow__inner row pad">
+                <div class="c-slideshow__title">Our Impact, Their Words</div>
+                <div class="c-slideshow--slider">
+                    <div class="single-item">
+                        <div class="c-slideshow__item">
+                            <div class="c-slideshow__item-description">I need my benefits and I tried to do it on my own, but I recently had a stroke, and I couldn’t figure it out. I was referred to you...without your help I would be lost.”</div>
+                            <div class="c-slideshow__item-meta">
+                                <span class="c-slideshow__item-meta--name">John</span>
+                                <span class="c-slideshow__item-meta--age-location">Age 67, New York</span>
+                            </div>
+                        </div>
+                        <div class="c-slideshow__item">
+                            <div class="c-slideshow__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt neque repellendus ad ex, natus repudiandae, alias, qui voluptatem at ipsam quos itaque debitis quasi nostrum!</div>
+                            <div class="c-slideshow__item-meta">
+                                <span class="c-slideshow__item-meta--name">Michael</span>
+                                <span class="c-slideshow__item-meta--age-location">Age 65, Boston</span>
+                            </div>
+                        </div>
+                        <div class="c-slideshow__item">
+                            <div class="c-slideshow__item-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate animi necessitatibus in, eveniet dignissimos rerum?</div>
+                            <div class="c-slideshow__item-meta">
+                                <span class="c-slideshow__item-meta--name">Anna</span>
+                                <span class="c-slideshow__item-meta--age-location">Age 70, California</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Latest Insight -->
+        <section class="s-insights" aria-labelledby="h2_insights">
+            <h2 class="accessible-hide" id="h2_insights">Latest Insights</h2>
+            <div class="s-insights__inner row pad">
+                <div class="s-insights__top">
+                    <div class="s-insights__left">
+                        <div class="s-insights__header">Latest Insights</div>
+                        <div class="s-insights__subheader">Check out what we've been working on recently</div>
+                    </div>
+                    <a href="#" class="s-insights__all">View all <span class="arrow-right bdt-icon"></span></a>
+                </div>
+
+                <div class="c-insights c-insights__container">
+                    <ul class="c-insights__items">
+                        <li class="c-insights__item">
+                            <span class="c-insights__item-category">In The News</span>
+                            <div class="c-insights__item-title">What a $20M donation and data will do for the ‘benefits access challenge’</div>
+                            <div class="c-insights__item-date">April 21, 2022</div>
+                            <a href="#" class="c-insights__item-more">Read more <span class="arrow-right bdt-icon"></span></a>
+                        </li>
+                        <li class="c-insights__item">
+                            <span class="c-insights__item-category">Blog</span>
+                            <div class="c-insights__item-title">Making Government More Efficient and Equitable</div>
+                            <div class="c-insights__item-date">April 18, 2022</div>
+                            <a href="#" class="c-insights__item-more">See update <span class="arrow-right bdt-icon"></span></a>
+                        </li>
+                        <li class="c-insights__item">
+                            <span class="c-insights__item-category">Blog</span>
+                            <div class="c-insights__item-title">Leveraging Data and Text Outreach to Connect Families to WIC</div>
+                            <div class="c-insights__item-date">April 8, 2022</div>
+                            <a href="#" class="c-insights__item-more">View reports <span class="arrow-right bdt-icon"></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter Subscription -->
+        <section class="s-newsletter" aria-labelledby="h2_newsletter">
+            <h2 class="accessible-hide" id="h2_newsletter">Newsletter Subscription</h2>
+            <div class="s-newsletter__inner row pad">
+                <div class="c-newsletter c-newsletter__container">
+                    <div class="c-newsletter__text">
+                        <span class="c-newsletter__header">Subscribe to our newsletter</span>
+                        <span class="c-newsletter__description">Get updates, learn about job opportunities, and stay in the loop on our work to modernize benefits access.</span>
+                    </div>
+                    <div class="c-newsletter__input">
+                        <form action="#">
+                            <input class="c-newsletter__input-email" type="text" name="email" id="email" placeholder="Email address" autocomplete="on" />
+                            <input class="c-newsletter__input-submit" type="submit" value="Subscribe" />
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer" aria-labelledby="h2_footer">
+        <h2 class="accessible-hide" id="h2_footer">Footer</h2>
+        <div class="main-footer__inner row pad">
+            <div class="main-footer__top">
+                <div class="main-footer__top__inner">
+                    <div class="main-footer__main">
+                        <a href="#" class="main-footer__top__logo">
+                            <img src="images/logo/bdt-logo-white.svg" alt="Benefits Data Trust">
+                        </a>
+                        <div class="main-footer__meta">
+                            <div class="main-footer__address">
+                                Center Square West<br>1500 Market St, Suite 2800<br>Philadelphia, PA 19102
+                            </div>
+                            <a href="tel:215-207-9100" class="main-footer__phone">(215) 207-9100</a>
+                            <span>General Inqueries: <a href="mailto:webmaster@example.com">informations@bdtrust.org</a></span>
+                            <span>Media Inqueries: <a href="mailto:webmaster@example.com">communications@bdtrust.org</a></span>
+                        </div>
+                    </div>
+
+                    <div class="main-footer__aside">
+                        <div class="main-footer__more">
+                            <div class="main-footer__section-header">More</div>
+                            <ul class="main-footer__more-links">
+                                <li class="main-footer__more-link">
+                                    <a href="#">Frequently Asked Questions</a>
+                                </li>
+                                <li class="main-footer__more-link">
+                                    <a href="#">Join Our Team</a>
+                                </li>
+                                <li class="main-footer__more-link">
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-footer__social">
+                            <div class="main-footer__section-header">Follow Us</div>
+                            <ul class="main-footer__social-icons">
+                                <li class="main-footer__social-icon">
+                                    <a href="#">
+                                        <img src="images/icons/social/facebook.svg" alt="Facebook">
+                                    </a>
+                                </li>
+                                <li class="main-footer__social-icon">
+                                    <a href="#">
+                                        <img src="images/icons/social/twitter.svg" alt="Twitter">
+                                    </a>
+                                </li>
+                                <li class="main-footer__social-icon">
+                                    <a href="#">
+                                        <img src="images/icons/social/linkedin.svg" alt="LinkedIn">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="main-footer__bottom">
+                <div class="main-footer__bottom__inner">
+                    <div class="main-footer__copy">
+                        <span>2022 Benefits Data Trust. All Right Reserved.</span>
+                        <a href="#">Privacy Policy</a>
+                    </div>
+                    <div class="main-footer__logos">
+                        <ul class="main-footer__awards">
+                            <li class="main-footer__award">
+                                <a href="#">
+                                    <img src="images/icons/awards/seal-of-transparency.png" alt="Seal of Transparency">
+                                </a>
+                            </li>
+                            <li class="main-footer__award">
+                                <a href="#">
+                                    <img src="images/icons/awards/aicpa.png" alt="AICPA">
+                                </a>
+                            </li>
+                            <li class="main-footer__award">
+                                <a href="#">
+                                    <img class="height-fix" src="images/icons/awards/top-workplaces.png" alt="Top Workplaces 2021">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        $('.s-services__tabs-container').tabs();
+    </script>
+
+    <script>
+    $(document).ready(function(){ $('.single-item').slick({ dots: true, arrows: true, infinite: true, slidesToShow: 1, slidesToScroll: 1, responsive: [
+                {
+                breakpoint: 1024,
+                    settings: {
+                        arrows: false
+                    }
+                }
+            ] 
+        }); 
+    });
+    </script>
+    
+</body>
+</html>
