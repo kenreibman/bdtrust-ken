@@ -249,13 +249,13 @@ ul.slick-dots button {
   font-size: 0;
 }
 .slick-prev::after {
-  content: url(../bdtrust-ken/images/icons/standard/chevron-left.svg);
+  content: url(/bdtrust-ken/images/icons/standard/chevron-left.svg);
   width: 32px;
   height: 32px;
   fill: #3399e1;
 }
 .slick-next::after {
-  content: url(../bdtrust-ken/images/icons/standard/chevron-right.svg);
+  content: url(/bdtrust-ken/images/icons/standard/chevron-right.svg);
   width: 32px;
   height: 32px;
   fill: #3399e1;
