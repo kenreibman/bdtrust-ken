@@ -383,6 +383,11 @@ body {
           .semibold();
           color: @blue-900;
           height: @main-nav-h;
+          svg {
+            width: 10px;
+            height: 10px;
+            margin-left: 8px;
+          }
         }
 
         &__level-2 {
@@ -430,6 +435,10 @@ body {
             &.is-open {
               right: 0;
             }
+          }
+          &__url--level-1 {
+            .justify-between();
+            padding: 1rem;
           }
           &__level-2 {
             display: none;
@@ -500,6 +509,14 @@ body {
         color: @white;
         .semibold();
         margin-top: 2rem;
+        transition: 0.25s ease;
+        &:hover,
+        &:focus {
+          background-color: @blue-500;
+        }
+        &:active {
+          background-color: @blue-700;
+        }
       }
     }
   }
@@ -851,6 +868,14 @@ body {
         .semibold();
         color: @white;
         line-height: 24px;
+        transition: 0.25s ease;
+        &:hover,
+        &:focus {
+          background-color: @blue-500;
+        }
+        &:active {
+          background-color: @blue-700;
+        }
       }
     }
   }
@@ -920,6 +945,14 @@ body {
         .semibold();
         width: 149px;
         height: 48px;
+        transition: 0.25s ease;
+        &:hover,
+        &:focus {
+          background-color: @blue-500;
+        }
+        &:active {
+          background-color: @blue-700;
+        }
       }
       &__image {
         .flex-item(1 1 50%);
@@ -1186,9 +1219,14 @@ body {
           border-radius: 24px;
           color: @white;
           margin-top: 8px;
+          transition: 0.25s ease;
           &:hover,
           &:focus {
+            background-color: @blue-700;
             cursor: pointer;
+          }
+          &:active {
+            background-color: @blue-700;
           }
         }
       }

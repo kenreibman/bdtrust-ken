@@ -369,6 +369,11 @@ body {
   color: #152e5f;
   height: 88px;
 }
+.main-header__primary__inner .c-navigation__url--level-1 svg {
+  width: 10px;
+  height: 10px;
+  margin-left: 8px;
+}
 .main-header__primary__inner .c-navigation__level-2 {
   display: none;
   position: absolute;
@@ -410,6 +415,11 @@ body {
   }
   .main-header__primary__inner .c-navigation__level-1.is-open {
     right: 0;
+  }
+  .main-header__primary__inner .c-navigation__url--level-1 {
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    padding: 1rem;
   }
   .main-header__primary__inner .c-navigation__level-2 {
     display: none;
@@ -478,6 +488,14 @@ body {
   font-weight: 600;
   font-style: normal;
   margin-top: 2rem;
+  transition: 0.25s ease;
+}
+.s-hero__inner .s-hero__more:hover,
+.s-hero__inner .s-hero__more:focus {
+  background-color: #2071bd;
+}
+.s-hero__inner .s-hero__more:active {
+  background-color: #1b4c8d;
 }
 @media (max-width: 1490px) {
   .s-hero::after {
@@ -836,6 +854,14 @@ body {
   font-style: normal;
   color: #ffffff;
   line-height: 24px;
+  transition: 0.25s ease;
+}
+.s-stats__inner .c-stats__more:hover,
+.s-stats__inner .c-stats__more:focus {
+  background-color: #2071bd;
+}
+.s-stats__inner .c-stats__more:active {
+  background-color: #1b4c8d;
 }
 @media (max-width: 1024px) {
   .s-stats {
@@ -911,6 +937,14 @@ body {
   font-style: normal;
   width: 149px;
   height: 48px;
+  transition: 0.25s ease;
+}
+.s-partners__inner .c-partners__more:hover,
+.s-partners__inner .c-partners__more:focus {
+  background-color: #2071bd;
+}
+.s-partners__inner .c-partners__more:active {
+  background-color: #1b4c8d;
 }
 .s-partners__inner .c-partners__image {
   flex: 1 1 50%;
@@ -1193,10 +1227,15 @@ body {
   border-radius: 24px;
   color: #ffffff;
   margin-top: 8px;
+  transition: 0.25s ease;
 }
 .s-newsletter__inner .c-newsletter__input-submit:hover,
 .s-newsletter__inner .c-newsletter__input-submit:focus {
+  background-color: #1b4c8d;
   cursor: pointer;
+}
+.s-newsletter__inner .c-newsletter__input-submit:active {
+  background-color: #1b4c8d;
 }
 @media (max-width: 1024px) {
   .s-newsletter__inner {
