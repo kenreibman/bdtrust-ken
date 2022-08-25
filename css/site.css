@@ -145,6 +145,9 @@ ul {
   padding: 0;
   border-radius: 0px;
 }
+.relative {
+  position: relative;
+}
 /*Animations*/
 /*Heights*/
 /*Row Styles*/
@@ -317,16 +320,26 @@ body {
   -webkit-justify-content: space-between;
   align-items: center;
   -webkit-align-items: center;
+  height: 88px;
 }
 .main-header__primary__logo {
   width: 130px;
+}
+.main-header__primary__inner {
+  position: relative;
 }
 .main-header__primary__inner .c-navigation__level-1 {
   display: flex;
   display: -webkit-flex;
   gap: 24px;
 }
-.main-header__primary__inner .c-navigation__url {
+.main-header__primary__inner .c-navigation__item--level-1:hover .c-navigation__level-2,
+.main-header__primary__inner .c-navigation__item--level-1:focus .c-navigation__level-2 {
+  visibility: visible;
+  pointer-events: all;
+  opacity: 1;
+}
+.main-header__primary__inner .c-navigation__url--level-1 {
   display: flex;
   display: -webkit-flex;
   align-items: center;
@@ -338,6 +351,51 @@ body {
   font-style: normal;
   color: #152e5f;
   height: 88px;
+}
+.main-header__primary__inner .c-navigation__level-2 {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  pointer-events: none;
+  opacity: 0;
+  background-color: #3399e1;
+}
+.main-header__primary__inner .c-navigation__url--level-2 {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  -webkit-justify-content: center;
+  color: #ffffff;
+  height: 64px;
+  padding: 15px 30px;
+  box-shadow: inset 0px -30px 5px -30px #ffffff;
+  transition: 0.25s ease;
+}
+.main-header__primary__inner .c-navigation__url--level-2:hover,
+.main-header__primary__inner .c-navigation__url--level-2:focus {
+  background-color: #1b4c8d;
+}
+@media (max-width: 1024px) {
+  .main-header__primary__inner .c-navigation__level-1 {
+    position: absolute;
+    right: 0;
+    top: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    min-width: 350px;
+    gap: 0;
+  }
+  .main-header__primary__inner .c-navigation__level-2 {
+    visibility: visible;
+    position: relative;
+    top: 0;
+    pointer-events: all;
+    opacity: 1;
+  }
 }
 .s-hero {
   position: relative;
