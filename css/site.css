@@ -597,6 +597,11 @@ body {
   font-weight: 600;
   font-style: normal;
   line-height: 24px;
+  transition: 0.25s ease;
+}
+.s-featured__inner .s-featured__item-more:hover,
+.s-featured__inner .s-featured__item-more:focus {
+  color: #2071bd;
 }
 @media (max-width: 1300px) {
   .s-featured__inner .s-featured__item-title {
@@ -755,6 +760,10 @@ body {
   font-weight: 600;
   font-style: normal;
   color: #3399e1;
+}
+.s-services__inner .s-services__item-link a:hover,
+.s-services__inner .s-services__item-link a:focus {
+  text-decoration: underline;
 }
 @media (max-width: 1024px) {
   .s-services__inner .s-services__tabs {
@@ -1082,6 +1091,13 @@ body {
   border: 1px solid #a0aec0;
   width: 147px;
   height: 48px;
+  transition: 0.25s ease;
+}
+.s-insights__inner .s-insights__all:hover,
+.s-insights__inner .s-insights__all:focus,
+.s-insights__inner .s-insights__all:active {
+  background-color: #3399e1;
+  color: #ffffff;
 }
 .s-insights__inner .c-insights__container {
   margin-top: 32px;
@@ -1123,6 +1139,10 @@ body {
   font-style: normal;
   color: #3399e1;
   margin-top: 1rem;
+}
+.s-insights__inner .c-insights__item-more:hover,
+.s-insights__inner .c-insights__item-more:focus {
+  text-decoration: underline;
 }
 @media (max-width: 1024px) {
   .s-insights__inner .c-insights__items {
