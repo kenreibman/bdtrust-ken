@@ -278,6 +278,27 @@ ul.slick-dots {
   }
 }
 
+.close {
+  display: none;
+  position: absolute;
+  right: 32px;
+  cursor: pointer;
+}
+.open {
+  display: none;
+  position: absolute;
+  right: 32px;
+  cursor: pointer;
+}
+@media (max-width: @bp_large) {
+  .close {
+    display: block;
+  }
+  .open {
+    display: block;
+  }
+}
+
 /* Breakpoints */
 @bp_xsmall: 540px;
 @bp_small: 640px;
@@ -349,13 +370,15 @@ body {
           .flex-container();
           gap: 24px;
         }
-        &__item--level-1 {
-          &:hover,
-          &:focus {
-            .c-navigation__level-2 {
-              visibility: visible;
-              pointer-events: all;
-              opacity: 1;
+        @media (min-width: ~'calc(@{bp_large} + 1px)') {
+          &__item--level-1 {
+            &:hover,
+            &:focus {
+              .c-navigation__level-2 {
+                display: block;
+                pointer-events: all;
+                opacity: 1;
+              }
             }
           }
         }
@@ -369,7 +392,7 @@ body {
         }
 
         &__level-2 {
-          visibility: hidden;
+          display: none;
           position: absolute;
           top: 100%;
           pointer-events: none;
@@ -400,7 +423,7 @@ body {
         .c-navigation {
           &__level-1 {
             position: absolute;
-            right: 0;
+            right: -100%;
             top: 100%;
             height: 100vh;
             display: flex;
@@ -408,9 +431,13 @@ body {
             background-color: @white;
             min-width: 350px;
             gap: 0;
+            transition: 0.25s ease;
+            &.is-open {
+              right: 0;
+            }
           }
           &__level-2 {
-            visibility: visible;
+            display: none;
             position: relative;
             top: 0;
             pointer-events: all;
