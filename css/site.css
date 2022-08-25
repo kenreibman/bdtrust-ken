@@ -263,17 +263,12 @@ ul.slick-dots button {
   height: 32px;
   fill: #3399e1;
 }
-.close {
-  display: none;
-  position: absolute;
-  right: 32px;
-  cursor: pointer;
-}
 .open {
   display: none;
   position: absolute;
   right: 32px;
   cursor: pointer;
+  line-height: 0;
 }
 @media (max-width: 1024px) {
   .close {
@@ -404,7 +399,8 @@ body {
     position: absolute;
     right: -100%;
     top: 100%;
-    height: 100vh;
+    height: calc(100vh - 88px - 40px);
+    overflow: auto;
     display: flex;
     flex-direction: column;
     background-color: #ffffff;
@@ -421,6 +417,7 @@ body {
     top: 0;
     pointer-events: all;
     opacity: 1;
+    background-color: #152e5f;
   }
 }
 .s-hero {
